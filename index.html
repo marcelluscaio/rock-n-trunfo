@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="./css/style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rock'n'Trunfo</title>
+</head>
+<body>
+   <header>
+      <a href="https://alura.com.br/" target="_blank">
+         <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+      </a>
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+   </header>
+   <div class="container">
+      <h1 class="page-title">Rock'n'Trunfo</h1>
+      <form id="form">
+         <div class="wrapper">
+            <div>
+               <div id="carta-jogador">
+                  <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">
+               </div>
+            </div>
+            <div>
+               <div id="carta-maquina" class="carta">
+                  <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">
+               </div>
+            </div>
+         </div>
+         <div id="placar"></div>
+         <div id="resultado"></div>
+         <div class="botoes">
+            <button onclick="puxarCarta()" id="btnSortear">Começar jogo</button>
+            <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Atacar</button>
+            <button class="button-proxima" type="button" id="btnProxima" onclick="proximaRodada()" disabled="true">Próxima rodada</button>
+            <button onclick="reiniciarJogo(event)" id="btnReiniciar" class="escondido">Jogar de novo</button>         
+         </div>         
+      </form>
+   </div>
+   <footer>
+      <p>Caio Cabral</p>
+      <p>Front-End Developer</p>
+      <a href="https://www.linkedin.com/in/caio-marcellus-cabral/" target="_blank"><p>Linkedin</p></a>
+   </footer>
+<script src="./js/script.js"></script>
+</body>
+</html>
